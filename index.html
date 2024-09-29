@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Legends Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Adding Bootstrap CSS for Carousel and Layout -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Home Page Carousel -->
+  <header>
+    <h1>Cricket Legends Hub</h1>
+    <p>Explore the world of cricket and its legendary players</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profiles">Player Profiles</a></li>
+        <li><a href="#map">Interactive Map</a></li>
+        <li><a href="#matches">Top Matches</a></li>
+        <li><a href="#fan-zone">Fan Zone</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/sachin.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/msdhoni.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Kohli.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Player Profiles Section -->
+  <section id="profiles" class="container mt-5">
+    <h2 >Player Profiles</h2>
+    <div class="row">
+      <!-- Player 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img src="images/Sachin1.jpg" class="card-img-top" alt="Player 1">
+          <div class="card-body">
+            <h5 class="card-title">	Sachin Ramesh Tendulkar</h5>
+            <p class="card-text" ><strong>Test Career Stats:</strong> 15,921 Runs, 46 Wickets</p>
+            <p class="card-text"><strong>Achievements:</strong> ICC Cricket World Cup Winner,2011 </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Player 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img src="images/msdhoni1.jpg" class="card-img-top" alt="Player 2">
+          <div class="card-body">
+            <h5 class="card-title">Mahendra Singh Dhoni</h5>
+            <p class="card-text"><strong>Test Career Stats:</strong> 4,876 Runs, 0 Wickets</p>
+            <p class="card-text"><strong>Achievements:</strong> ICC Champions Trophy Winner,2013 </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Player 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card">
+          <img src="images/kohli1.jpg" class="card-img-top" alt="Player 3">
+          <div class="card-body">
+            <h5 class="card-title">Virat Kohli</h5>
+            <p class="card-text"><strong>Test Career Stats:</strong> 8,848 Runs, 0 Wickets</p>
+            <p class="card-text"><strong>Achievements:</strong> T20 World Cup Winner,2024 and U19 World Cup
+              Winner,2008 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map Section -->
+<section id="map" class="container mt-5">
+  <h2 style="color: rgb(53, 17, 233);">Interactive Map</h2>
+  <p>Explore the hometowns of cricket legends from around the world.</p>
+  <div id="world-map" style="height: 500px; width: 100%;"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE2Ruvhf7DsGaa8I-7ROlf4nnwSq8scwc&callback=initMap" async defer></script>
+</section>
+
+  <!-- Top Matches Section -->
+  <section id="matches" class="container mt-5" style="background-color: #6aa7e3;">
+    <h2 style="color: brown;">Top Matches</h2>
+    <div class="match-highlight">
+      <h3>ICC Cricket World Cup,2011</h3>
+      <p>The six that brought glory to India after 28 years 🎉
+        MS Dhoni's maximum in the 2011 Final is in the last four Greatest Moments from Men's ICC Cricket World Cup history 😍</p>
+      <video controls width="600" height="400">
+        <source src="images/icc world cup.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- Add more match highlights as needed -->
+  </section>
+
+  <!-- Fan Zone Section -->
+  <section id="fan-zone" class="container mt-5" style="background-color: beige;">
+    <h2 style="font-family: 'Comic Sans MS', cursive; font-size: 40px; color: #1e90ff;">Fan Zone</h2>
+    <p>Submit your favorite player stories or vote for the greatest player of all time!</p>
+    <form id="fan-form">
+      <label for="story">Your Story:</label>
+      <textarea id="story" name="story" class="form-control"></textarea>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+  </section>
+
+  <!-- Bootstrap and jQuery scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Copyright Paragraph -->
+  <p class="copyright">&copy; 2024 Cricket Legends Hub</p>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE2Ruvhf7DsGaa8I-7ROlf4nnwSq8scwc&callback=initMap" async defer></script>
+
+  <script>
+    function initMap() {
+      // Create a map centered on India
+      var map = new google.maps.Map(document.getElementById('world-map'), {
+        zoom: 5,
+        center: { lat: 20.5937, lng: 78.9629 } // Center on India
+      });
+  
+      // Define locations with latitude, longitude, and info
+      var locations = [
+        { position: { lat: 19.0760, lng: 72.8777 }, title: 'Sachin Tendulkar', info: 'Sachin Tendulkar - ICC Cricket World Cup Winner, 2011' },
+        { position: { lat: 23.0225, lng: 72.5714 }, title: 'MS Dhoni', info: 'MS Dhoni - ICC Cricket World Cup Winner, 2007 and 2011' },
+        { position: { lat: 28.6139, lng: 77.2090 }, title: 'Virat Kohli', info: 'Virat Kohli - ICC ODI Player of the Year' }
+      ];
+  
+      // Add markers to the map
+      locations.forEach(function(location) {
+        var marker = new google.maps.Marker({
+          position: location.position,
+          map: map,
+          title: location.title
+        });
+  
+        // Add an info window to each marker
+        var infoWindow = new google.maps.InfoWindow({
+          content: '<h3>' + location.title + '</h3><p>' + location.info + '</p>'
+        });
+  
+        marker.addListener('click', function() {
+          infoWindow.open(map, marker);
+        });
+      });
+    }
+  </script>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE2Ruvhf7DsGaa8I-7ROlf4nnwSq8scwc&callback=initMap" async defer></script>
+</head>
+</body>
+</html>
+
